@@ -1,0 +1,9 @@
+<h1>Add Product to Cart</h1>
+
+<%= form_for :product, @product:, url => { :action => "add_to_cart" } do |f| %>
+  <%= f.label :product %>
+  <%= f.text_field :product %><br>
+  <br />
+
+  <%= f.submit %>
+<% end %>

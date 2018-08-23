@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   get '/', to: 'products#index'
 
+<<<<<<< HEAD
   post '/', to: 'products#add'
+=======
+  get '/products/:id/add_to_cart', to: 'products#add_to_cart'
+>>>>>>> 705d48a33d9c555ea06b542f5747fff704cf77fe
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
